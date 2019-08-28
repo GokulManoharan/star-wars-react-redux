@@ -16,9 +16,10 @@ class Login extends React.Component{
     }
 
     componentWillReceiveProps(props){
-        console.log(props.loginState.loginData[0].loginStatus)
         if(props.loginState.loginData[0].loginStatus){
             this.props.history.push("/search")
+        }else if(!props.loginState.loginData[0].loginStatus){
+            this.setState({status : "Username or Password is incorrect"})
         }
     }
 
@@ -31,8 +32,7 @@ class Login extends React.Component{
      handleChange = (e) => {
         e.persist()
         this.setState(() => ({
-            [e.target.name]: e.target.value,
-            status: ""
+            [e.target.name]: e.target.value
         }))
     }
 

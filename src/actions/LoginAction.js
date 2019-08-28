@@ -20,10 +20,14 @@ export const startLoginUser = (username,password) => {
                                     loginStatus : true
                                 }))
                             }else{
-                                console.log('Username or password is incorrect')
+                                dispatch(loginUser({
+                                    loginStatus : false
+                                }))
                             }
                         }else{
-                            console.log('Username or password is incorrect')
+                            dispatch(loginUser({
+                                loginStatus : false
+                            }))
                         }
                     }else{
                         console.log('User details not found')                        
