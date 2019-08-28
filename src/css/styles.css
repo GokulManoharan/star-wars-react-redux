@@ -1,6 +1,3 @@
-body{
-
-}
 .loginPage{
     width: 100%;
     height: 100vh;
@@ -20,9 +17,6 @@ body{
     font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 30px;
-}
-.loginPage form{
-
 }
 .loginPage input{
     border: 0 !important;
@@ -69,9 +63,6 @@ body{
     padding: 10px 15px;
     vertical-align: top;
     margin: 0 0 0 10px;
-}
-.planets{
-
 }
 .planets ul{
     padding: 0;
