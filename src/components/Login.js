@@ -43,7 +43,6 @@ class Login extends React.Component{
                 <div>
                     <h1>Login </h1>
                     <form onSubmit={this.handleSubmit}>
-                        
                         <input type="text"
                             name="username"
                             value={username}
@@ -51,7 +50,6 @@ class Login extends React.Component{
                             className="form-control"
                             placeholder="Username"
                             />
-                    
                         <input type="password"
                             name="password"
                             value={password}
@@ -59,11 +57,8 @@ class Login extends React.Component{
                             className="form-control"
                             placeholder="Password"
                             />      
-                            
                         { status && <p className="text-danger">{status}</p> }
-
                         <button type="submit" className="btn">{ isSubmitting ? <i className="fas fa-spin fa-sync-alt"></i> : 'Login' }</button>
-
                     </form>
                 </div>
             </div>

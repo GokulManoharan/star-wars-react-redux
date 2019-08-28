@@ -103,7 +103,8 @@ class Search extends React.Component{
                                 <ul>
                                     { planets.map(planet => {
                                             return (
-                                                <li key={ planet.name } className={ largest === planet.population ? 'bgFont' : '' }>{ planet.name }</li>
+                                                <a href="#"><li key={ planet.name } className={ largest === planet.population ? 'bgFont' : '' }>{ planet.name }</li>
+                                                </a>
                                             )
                                         })
                                     }
